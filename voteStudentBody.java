@@ -1,3 +1,12 @@
+// ****************************************************************
+//   voteStudentBody.java
+//   Author: Jennifer Soh  ID: JS542
+//   Compiler Used: JGrasp
+//   Create a GUI that provides buttons to vote for Student Body.
+//   Increment respective variables when a vote it placed.
+//   Display the total votes for each candidate.      
+// ****************************************************************      
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
@@ -17,7 +26,6 @@ public class voteStudentBody extends JFrame {
       canPanel.setLayout(new GridLayout(1,3));
       
       // Create Image Icons
-      ImageIcon voteIn = new ImageIcon("img/VOTE.jpg");
       ImageIcon mickey = new ImageIcon("img/mickey.jpg");
       ImageIcon mitchell = new ImageIcon("img/mitchell.jpg");     
       ImageIcon john = new ImageIcon("img/john.jpg");
@@ -129,7 +137,7 @@ public class voteStudentBody extends JFrame {
    }
    /* *************************************************************   
 
-   6. Listener classes
+   6. Listener classes (voteCandidateListener)
    
    **************************************************************** */
    class voteMickListener implements ActionListener {
@@ -153,7 +161,7 @@ public class voteStudentBody extends JFrame {
    }   
    /* *************************************************************   
 
-   7. Functions to perform:
+   7. Functions to perform (voteCandidateClass):
    
    **************************************************************** */
 
